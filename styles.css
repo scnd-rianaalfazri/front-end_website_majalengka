@@ -9,6 +9,69 @@ body {
   background: #fafafa;
   color: #333;
   line-height: 1.7;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+#darkModeToggle {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#darkModeToggle:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+/* DARK THEME */
+body.dark {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+body.dark header,
+body.dark footer,
+body.dark aside {
+  background-color: #020617;
+}
+
+body.dark a {
+  color: #38bdf8;
+}
+
+body.dark img {
+  filter: brightness(0.9) contrast(1.05);
+}
+
+body.dark .btn {
+  background-color: #1e293b;
+  color: #e5e7eb;
+}
+
+body.dark h1{
+  color: #f1f5f9;
+}
+
+body.dark h2{
+  color: #f1f5f9;
+}
+
+body.dark h3{
+  color: #f1f5f9;
+}
+
+body.dark h4{
+  color: #f1f5f9;
+}
+
+body.dark h5{
+  color: #f1f5f9;
+}
+
+body.dark section {
+  background-color: #1e293b;
+  border-color: #334155;
 }
 
 /* HEADER AESTHETIC */
